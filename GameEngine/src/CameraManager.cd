@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CameraManager">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="CameraManager" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ABAAAAAQAAAAAAgAAABBAACAAAAAAAAgBAAAAAAAAAA=</HashCode>
+      <FileName>CameraManager.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pTree" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CameraNode">
+    <Position X="5" Y="3" Width="1.5" />
+    <Members>
+      <Method Name="~CameraNode" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>EAAAEAAAAAgAAAAAAAAAIAAAAAAAAAAAIgAAAACAAAA=</HashCode>
+      <FileName>CameraNode.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="poCamera" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Camera">
+    <Position X="7.5" Y="3" Width="1.5" />
+    <Members>
+      <Method Name="~Camera" Hidden="true" />
+      <Method Name="Camera" Hidden="true" />
+      <Method Name="getDir" Hidden="true" />
+      <Method Name="getFarBottomLeft" Hidden="true" />
+      <Method Name="getFarBottomRight" Hidden="true" />
+      <Method Name="getFarTopLeft" Hidden="true" />
+      <Method Name="getFarTopRight" Hidden="true" />
+      <Method Name="getFieldOfView" Hidden="true" />
+      <Method Name="getLookAt" Hidden="true" />
+      <Method Name="getNearBottomLeft" Hidden="true" />
+      <Method Name="getNearBottomRight" Hidden="true" />
+      <Method Name="getNearDist" Hidden="true" />
+      <Method Name="getNearTopLeft" Hidden="true" />
+      <Method Name="getNearTopRight" Hidden="true" />
+      <Method Name="getPos" Hidden="true" />
+      <Method Name="getProjMatrix" Hidden="true" />
+      <Method Name="getRight" Hidden="true" />
+      <Method Name="getScreenHeight" Hidden="true" />
+      <Method Name="getScreenWidth" Hidden="true" />
+      <Method Name="getUp" Hidden="true" />
+      <Method Name="getViewMatrix" Hidden="true" />
+      <Method Name="privCalcFrustumCollisionNormals" Hidden="true" />
+      <Method Name="privCalcFrustumVerts" Hidden="true" />
+      <Method Name="privCalcPlaneHeightWidth" Hidden="true" />
+      <Method Name="privSetViewState" Hidden="true" />
+      <Method Name="privUpdateProjectionMatrix" Hidden="true" />
+      <Method Name="privUpdateViewMatrix" Hidden="true" />
+      <Method Name="setFieldOfView" Hidden="true" />
+      <Method Name="setNearDist" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AHgiQQUQoAQgECREQBQAggiSgACKywBoglgAZAIC6Uw=</HashCode>
+      <FileName>Camera.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PCSTree">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="~PCSTree" Hidden="true" />
+      <Method Name="GetInfo" Hidden="true" />
+      <Field Name="mInfo" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="PCSTree" Hidden="true" />
+      <Method Name="Print" Hidden="true" />
+      <Method Name="privCalcCurrLevels" Hidden="true" />
+      <Method Name="privPrintLevelSeperator" Hidden="true" />
+      <Method Name="privPrintTree" Hidden="true" />
+      <Method Name="privRemoveSibling" Hidden="true" />
+      <Method Name="privRemoveSingleChild" Hidden="true" />
+      <Method Name="privSetMaxLevels" Hidden="true" />
+      <Method Name="privSetMaxNodes" Hidden="true" />
+      <Method Name="Remove" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Struct Name="PCSTree::Info" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Z:\Users\Chris\Documents\DepaulCourses\GameEngine1\keenan2017fall_gam475\student\cloera1\Libraries\dist\PCSTree\Headers\PCSTree.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AIAAAEABAAAAAAAAAAIARACAAIAACEAAAAAgoAQEQAA=</HashCode>
+      <FileName>Z:\Users\Chris\Documents\DepaulCourses\GameEngine1\keenan2017fall_gam475\student\cloera1\Libraries\dist\PCSTree\Headers\PCSTree.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pRoot" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PCSNode">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="~PCSNode" Hidden="true" />
+      <Method Name="ClearPointers" Hidden="true" />
+      <Method Name="GetChild" Hidden="true" />
+      <Method Name="GetForward" Hidden="true" />
+      <Method Name="GetName" Hidden="true" />
+      <Method Name="GetNextSibling" Hidden="true" />
+      <Method Name="GetNumChildren" Hidden="true" />
+      <Method Name="GetNumSiblings" Hidden="true" />
+      <Method Name="GetParent" Hidden="true" />
+      <Method Name="GetPrevSibling" Hidden="true" />
+      <Method Name="GetReverse" Hidden="true" />
+      <Field Name="MAJOR_VERSION" Hidden="true" />
+      <Field Name="MINOR_VERSION" Hidden="true" />
+      <Field Name="NAME_SIZE" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="PCSNode" Hidden="true" />
+      <Field Name="pForward" Hidden="true" />
+      <Field Name="pName" Hidden="true" />
+      <Field Name="pReverse" Hidden="true" />
+      <Method Name="PrintChildren" Hidden="true" />
+      <Method Name="PrintNode" Hidden="true" />
+      <Method Name="PrintSiblings" Hidden="true" />
+      <Method Name="privGetNumNextSiblings" Hidden="true" />
+      <Method Name="privGetNumPrevSiblings" Hidden="true" />
+      <Method Name="SetChild" Hidden="true" />
+      <Method Name="SetForward" Hidden="true" />
+      <Method Name="SetName" Hidden="true" />
+      <Method Name="SetNextSibling" Hidden="true" />
+      <Method Name="SetParent" Hidden="true" />
+      <Method Name="SetPrevSibling" Hidden="true" />
+      <Method Name="SetReverse" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="PCSNode::Code" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Z:\Users\Chris\Documents\DepaulCourses\GameEngine1\keenan2017fall_gam475\student\cloera1\Libraries\dist\PCSTree\Headers\PCSNode.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>QAAAAIQAhEAIAAAgAAIwaAgABgCgGAAIAMAkQEQCjQA=</HashCode>
+      <FileName>Z:\Users\Chris\Documents\DepaulCourses\GameEngine1\keenan2017fall_gam475\student\cloera1\Libraries\dist\PCSTree\Headers\PCSNode.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
